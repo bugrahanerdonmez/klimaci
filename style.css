@@ -8,6 +8,7 @@
   --white: #ffffff;
   --border: #e2e8f0;
   --success: #22c55e;
+  --map: #2563eb;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   --radius: 20px;
   --container: 1180px;
@@ -73,6 +74,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
+  position: relative;
 }
 
 .logo {
@@ -91,6 +93,11 @@ a {
 .nav-menu a {
   color: var(--dark);
   font-weight: 500;
+}
+
+.nav-menu a:hover,
+.footer-links a:hover {
+  color: var(--primary);
 }
 
 .nav-actions {
@@ -139,6 +146,11 @@ a {
 
 .btn-whatsapp {
   background: var(--success);
+  color: var(--white);
+}
+
+.btn-map {
+  background: var(--map);
   color: var(--white);
 }
 
@@ -243,7 +255,8 @@ a {
 
 .service-grid,
 .adv-grid,
-.process-grid {
+.process-grid,
+.testimonial-grid {
   display: grid;
   gap: 22px;
 }
@@ -257,7 +270,8 @@ a {
 .step,
 .contact-card,
 .map-wrap,
-.faq-list details {
+.faq-list details,
+.testimonial-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -281,12 +295,14 @@ a {
 
 .card p,
 .adv-item p,
-.step p {
+.step p,
+.testimonial-card p {
   margin: 0;
   color: var(--muted);
 }
 
-.advantages {
+.advantages,
+.faq {
   background: var(--light);
 }
 
@@ -326,8 +342,36 @@ a {
   margin-bottom: 14px;
 }
 
-.faq {
-  background: var(--light);
+.testimonials {
+  background: #ffffff;
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial-card {
+  padding: 28px;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 18px;
+  color: var(--dark);
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .faq-list {
@@ -421,7 +465,8 @@ a {
   .contact-grid,
   .service-grid,
   .adv-grid,
-  .process-grid {
+  .process-grid,
+  .testimonial-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -474,7 +519,8 @@ a {
   .service-grid,
   .adv-grid,
   .process-grid,
-  .contact-grid {
+  .contact-grid,
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
 
@@ -492,6 +538,10 @@ a {
 
   .logo {
     font-size: 22px;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
   }
 
   .mobile-cta {
