@@ -5,60 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>KLİMACI | Karşıyaka Klima Servisi</title>
-  <meta
-    name="description"
-    content="Karşıyaka ve çevresinde klima bakım, montaj, gaz dolumu ve arıza onarım hizmetleri. Hızlı servis ve kolay iletişim için hemen ulaşın."
-  />
-  <meta
-    name="keywords"
-    content="Karşıyaka klima servisi, İzmir klima bakım, klima montaj, klima arıza, gaz dolumu"
-  />
-  <meta name="theme-color" content="#0ea5e9" />
-
-  <meta property="og:title" content="KLİMACI | Karşıyaka Klima Servisi" />
-  <meta
-    property="og:description"
-    content="Klima bakım, montaj, arıza onarım ve gaz dolumu hizmetlerinde hızlı servis ve güvenilir işçilik."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bugrahanerdonmez.github.io/klimaci/" />
-  <meta property="og:image" content="https://bugrahanerdonmez.github.io/klimaci/assets/hero-klima.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="KLİMACI | Karşıyaka Klima Servisi" />
-  <meta
-    name="twitter:description"
-    content="Karşıyaka klima bakım, montaj, arıza onarım ve gaz dolumu hizmetleri."
-  />
-  <meta name="twitter:image" content="https://bugrahanerdonmez.github.io/klimaci/assets/hero-klima.jpg" />
+  <meta name="description" content="Karşıyaka ve çevresinde klima bakım, montaj, gaz dolumu ve arıza onarım hizmetleri. Hızlı servis ve kolay iletişim için hemen ulaşın." />
+  <meta name="keywords" content="Karşıyaka klima servisi, İzmir klima bakım, klima montaj, klima arıza, gaz dolumu" />
 
   <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- TOPBAR -->
   <div class="topbar">
     <div class="container topbar-inner">
       <span>Karşıyaka / İzmir</span>
       <span>Aynı Gün Servis</span>
-      <a href="tel:+905068980082">+90 506 898 00 82</a>
+      <span>2 Hat Aktif</span>
     </div>
   </div>
 
+  <!-- HEADER -->
   <header class="header">
     <div class="container nav">
       <a href="#anasayfa" class="logo">KLİMACI</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç">
-        ☰
-      </button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
 
       <nav class="nav-menu" id="navMenu">
         <a href="#anasayfa">Anasayfa</a>
@@ -70,309 +43,76 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-outline" href="tel:+905068980082">Hemen Ara</a>
-        <a
-          class="btn btn-primary"
-          href="https://wa.me/905068980082?text=Merhaba,%20Kar%C5%9F%C4%B1yaka%20klima%20servis%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-          target="_blank"
-          rel="noopener"
-        >
-          WhatsApp
-        </a>
+        <a class="btn btn-outline" href="#" onclick="openModal('call'); return false;">Hemen Ara</a>
+        <a class="btn btn-primary" href="#" onclick="openModal('whatsapp'); return false;">WhatsApp</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="anasayfa">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="badge">Karşıyaka Klima Servisi</span>
-          <h1>Klima bakım, montaj ve arıza çözümlerinde hızlı servis</h1>
-          <p>
-            Karşıyaka ve çevresinde klima bakım, montaj, arıza tespiti, onarım ve
-            gaz dolumu hizmetlerinde hızlı dönüş ve güvenilir işçilik sunuyoruz.
-          </p>
+  <!-- HERO -->
+  <section class="hero" id="anasayfa">
+    <div class="container hero-grid">
 
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-large" href="tel:+905068980082">📞 Hemen Ara</a>
-            <a
-              class="btn btn-whatsapp btn-large"
-              href="https://wa.me/905068980082?text=Merhaba,%20Kar%C5%9F%C4%B1yaka%20klima%20servis%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-              target="_blank"
-              rel="noopener"
-            >
-              💬 WhatsApp’tan Yaz
-            </a>
-          </div>
-
-          <div class="hero-features">
-            <span>✔ Aynı Gün Servis</span>
-            <span>✔ Uygun Fiyat</span>
-            <span>✔ Tüm Marka ve Modeller</span>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <img src="assets/hero-klima.jpg" alt="Klima servis görseli" />
-        </div>
-      </div>
-    </section>
-
-    <section class="services section" id="hizmetler">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Hizmetlerimiz</span>
-          <h2>İhtiyacınıza uygun klima servis hizmetleri</h2>
-          <p>Ev ve iş yerleri için hızlı, düzenli ve güvenilir teknik destek.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="card">
-            <div class="card-icon">❄️</div>
-            <h3>Klima Bakım</h3>
-            <p>Düzenli bakım ile performansı artırın, enerji tüketimini azaltın ve daha sağlıklı hava kalitesi elde edin.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🛠️</div>
-            <h3>Klima Montaj</h3>
-            <p>İç ve dış ünite için doğru konumlandırma ve güvenli montaj uygulamaları ile sorunsuz kullanım.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🔍</div>
-            <h3>Arıza Tespit & Onarım</h3>
-            <p>Soğutmama, su akıtma, ses yapma veya çalışmama gibi sorunlarda hızlı arıza tespiti ve çözüm.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🧪</div>
-            <h3>Gaz Dolumu</h3>
-            <p>Eksilen gaz seviyesine bağlı performans kayıplarında uygun kontrol ve dolum işlemleri uygulanır.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🧼</div>
-            <h3>Klima Temizliği</h3>
-            <p>Filtre ve iç ünite temizlik işlemleri ile hem verimlilik hem de hava kalitesi artırılır.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">🚚</div>
-            <h3>Sökme / Takma</h3>
-            <p>Taşınma veya yer değişikliği durumlarında güvenli sökme ve yeniden kurulum hizmeti sağlanır.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="advantages section" id="neden-biz">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Neden Biz?</span>
-          <h2>Hızlı servis, net iletişim, güvenilir işçilik</h2>
-        </div>
-
-        <div class="adv-grid">
-          <div class="adv-item">
-            <strong>Hızlı Müdahale</strong>
-            <p>Karşıyaka ve çevresine hızlı servis desteği.</p>
-          </div>
-          <div class="adv-item">
-            <strong>Deneyimli Ekip</strong>
-            <p>Tüm marka ve modellere uygun teknik yaklaşım.</p>
-          </div>
-          <div class="adv-item">
-            <strong>Şeffaf Fiyatlandırma</strong>
-            <p>İşlem öncesi bilgilendirme ve net süreç.</p>
-          </div>
-          <div class="adv-item">
-            <strong>Garantili İşçilik</strong>
-            <p>Uygulama sonrası destek ve memnuniyet odaklı hizmet.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="process section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Çalışma Sürecimiz</span>
-          <h2>4 adımda hızlı servis</h2>
-        </div>
-
-        <div class="process-grid">
-          <div class="step">
-            <span>1</span>
-            <h3>Bize Ulaşın</h3>
-            <p>Telefon veya WhatsApp üzerinden talebinizi iletin.</p>
-          </div>
-          <div class="step">
-            <span>2</span>
-            <h3>Tespit</h3>
-            <p>İhtiyaç veya arıza durumu yerinde değerlendirilir.</p>
-          </div>
-          <div class="step">
-            <span>3</span>
-            <h3>Uygulama</h3>
-            <p>Gerekli bakım, montaj veya onarım işlemi yapılır.</p>
-          </div>
-          <div class="step">
-            <span>4</span>
-            <h3>Teslim</h3>
-            <p>Kontroller tamamlanır ve kullanım bilgisi paylaşılır.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials section" id="yorumlar">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Müşteri Yorumları</span>
-          <h2>Hizmet alan müşterilerimizin görüşleri</h2>
-          <p>Güvenilir servis deneyimi için müşterilerimizin yorumları bizim için önemli.</p>
-        </div>
-
-        <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              Yazın ortasında klimamız çalışmaz hale gelmişti. Çok hızlı dönüş yaptılar,
-              kısa sürede sorunu çözdüler. İletişimleri de gayet iyiydi.
-            </p>
-            <strong>Ahmet K.</strong>
-            <span>Karşıyaka</span>
-          </article>
-
-          <article class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              Klima bakım hizmeti aldık. Temiz ve düzenli çalıştılar, sonrasında cihazın
-              performansı belirgin şekilde arttı. Memnun kaldık.
-            </p>
-            <strong>Elif T.</strong>
-            <span>Bostanlı</span>
-          </article>
-
-          <article class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              Taşınma sırasında sökme ve yeniden montaj işlemi yaptırdık. Zamanında geldiler,
-              montajı sorunsuz tamamladılar. Tavsiye ederim.
-            </p>
-            <strong>Mert A.</strong>
-            <span>Mavişehir</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq section" id="sss">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Sık Sorulan Sorular</span>
-          <h2>Merak edilenler</h2>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>Klima bakımı ne sıklıkla yapılmalı?</summary>
-            <p>Genellikle yılda en az 1 kez bakım önerilir. Yoğun kullanımda bu süre daha sık olabilir.</p>
-          </details>
-
-          <details>
-            <summary>Klima neden yeterince soğutmuyor?</summary>
-            <p>Filtre kirliliği, gaz eksikliği, bakım ihtiyacı veya teknik arızalar buna neden olabilir.</p>
-          </details>
-
-          <details>
-            <summary>Montaj işlemi ne kadar sürer?</summary>
-            <p>Kurulum alanına göre değişmekle birlikte çoğu standart montaj işlemi birkaç saat içinde tamamlanır.</p>
-          </details>
-
-          <details>
-            <summary>Tüm markalara servis veriyor musunuz?</summary>
-            <p>Evet, birçok marka ve model için bakım, montaj ve teknik servis desteği sağlanır.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="iletisim">
-      <div class="container contact-grid">
-        <div class="contact-card">
-          <span class="section-tag">İletişim</span>
-          <h2>Bize hemen ulaşın</h2>
-          <p>Karşıyaka ve çevresinde klima servis talepleriniz için telefon veya WhatsApp üzerinden ulaşabilirsiniz.</p>
-
-          <ul class="contact-list">
-            <li><strong>Telefon:</strong> <a href="tel:+905068980082">+90 506 898 00 82</a></li>
-            <li><strong>Adres:</strong> Cumhuriyet, 1595. Sk. No:219/A, 35570 Karşıyaka / İzmir</li>
-            <li><strong>Çalışma Bölgesi:</strong> Karşıyaka, Bostanlı, Mavişehir, Çiğli, Bayraklı</li>
-          </ul>
-
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="tel:+905068980082">Ara</a>
-            <a
-              class="btn btn-whatsapp"
-              href="https://wa.me/905068980082?text=Merhaba,%20Kar%C5%9F%C4%B1yaka%20klima%20servis%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-              target="_blank"
-              rel="noopener"
-            >
-              WhatsApp
-            </a>
-            <a
-              class="btn btn-map"
-              href="https://www.google.com/maps/dir/?api=1&destination=Cumhuriyet%2C%201595.%20Sk.%20No%3A219%2FA%2C%2035570%20Kar%C5%9F%C4%B1yaka%2F%C4%B0zmir"
-              target="_blank"
-              rel="noopener"
-            >
-              Yol Tarifi Al
-            </a>
-          </div>
-        </div>
-
-        <div class="map-wrap">
-          <iframe
-            title="KLİMACI Konum"
-            src="https://www.google.com/maps?q=Cumhuriyet%201595.%20Sk.%20No:219/A%2035570%20Kar%C5%9F%C4%B1yaka%20%C4%B0zmir&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
       <div>
-        <strong>KLİMACI</strong>
-        <p>Karşıyaka klima bakım, montaj ve teknik servis hizmetleri.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#anasayfa">Anasayfa</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#yorumlar">Yorumlar</a>
-        <a href="#sss">SSS</a>
-        <a href="#iletisim">İletişim</a>
-      </div>
-    </div>
-  </footer>
+        <span class="badge">Karşıyaka Klima Servisi</span>
+        <h1>Klima bakım, montaj ve arıza çözümlerinde hızlı servis</h1>
+        <p>Karşıyaka ve çevresinde hızlı ve güvenilir klima servisi.</p>
 
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#" onclick="openModal('call'); return false;">📞 Hemen Ara</a>
+          <a class="btn btn-whatsapp btn-large" href="#" onclick="openModal('whatsapp'); return false;">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="assets/hero-klima.jpg" alt="klima" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="iletisim">
+    <div class="container contact-grid">
+
+      <div class="contact-card">
+        <h2>Bize Ulaşın</h2>
+
+        <ul class="contact-list">
+          <li><strong>Telefon:</strong> 2 farklı hat üzerinden ulaşabilirsiniz</li>
+          <li><strong>Adres:</strong> Karşıyaka / İzmir</li>
+        </ul>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="#" onclick="openModal('call'); return false;">Ara</a>
+          <a class="btn btn-whatsapp" href="#" onclick="openModal('whatsapp'); return false;">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MOBILE -->
   <div class="mobile-cta">
-    <a href="tel:+905068980082" class="mobile-call">📞 Ara</a>
-    <a
-      href="https://wa.me/905068980082?text=Merhaba,%20Kar%C5%9F%C4%B1yaka%20klima%20servis%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-      target="_blank"
-      rel="noopener"
-      class="mobile-wa"
-    >
-      💬 WhatsApp
-    </a>
+    <a href="#" class="mobile-call" onclick="openModal('call'); return false;">📞 Ara</a>
+    <a href="#" class="mobile-wa" onclick="openModal('whatsapp'); return false;">💬 WhatsApp</a>
+  </div>
+
+  <!-- MODAL -->
+  <div id="phoneModal" class="phone-modal">
+    <div class="phone-modal-content">
+      <h3>Numara Seç</h3>
+
+      <button onclick="selectPhone('05079646016')" class="phone-option">
+        📞 0507 964 60 16
+      </button>
+
+      <button onclick="selectPhone('05444525718')" class="phone-option">
+        📞 0544 452 57 18
+      </button>
+
+      <button onclick="closeModal()" class="phone-close">Kapat</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
