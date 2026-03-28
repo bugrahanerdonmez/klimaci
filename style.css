@@ -473,11 +473,39 @@ a {
   margin-top: 16px;
 }
 
+.phone-modal-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.phone-options button {
+  min-width: 180px;
+  border: 1px solid var(--border);
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.phone-options button:hover,
+.phone-options button:focus {
+  background: var(--primary-dark);
+  outline: none;
+}
+
+.phone-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .phone-modal.open,
 .phone-modal[style*="display: flex"] {
   display: flex;
 }
 
+.footer-inner {
   display: flex;
   justify-content: space-between;
   gap: 24px;
