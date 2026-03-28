@@ -27,10 +27,10 @@ function closeModal() {
 
 function selectPhone(number) {
   if (actionType === "call") {
-    window.location.href = "tel:+9" + number;
+    window.location.href = "tel:+90" + number;
   } else {
     window.open(
-      "https://wa.me/9" + number,
+      "https://wa.me/90" + number,
       "_blank"
     );
   }
