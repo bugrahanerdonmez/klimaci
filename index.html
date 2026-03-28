@@ -48,7 +48,8 @@
     <div class="container topbar-inner">
       <span>Karşıyaka / İzmir</span>
       <span>Aynı Gün Servis</span>
-      <a href="tel:+905068980082">+90 506 898 00 82</a>
+      <a href="tel:+905079646016">+90 507 964 60 16</a>
+      <a href="tel:+905444525718">+90 544 452 57 18</a>
     </div>
   </div>
 
@@ -70,7 +71,7 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-outline" href="tel:+905068980082">Hemen Ara</a>
+        <a class="btn btn-outline" href="#" onclick="openModal('call'); return false;">Hemen Ara</a>
         <a
           class="btn btn-primary"
           href="https://wa.me/905068980082?text=Merhaba,%20Kar%C5%9F%C4%B1yaka%20klima%20servis%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
@@ -373,6 +374,17 @@
     >
       💬 WhatsApp
     </a>
+  </div>
+
+  <div id="phoneModal" class="phone-modal" aria-hidden="true" role="dialog" aria-label="Telefon Numarası Seçimi">
+    <div class="phone-modal-content">
+      <button class="phone-modal-close" onclick="closeModal()" aria-label="Kapat">×</button>
+      <h3>Hangi numarayı aramak istersiniz?</h3>
+      <div class="phone-options">
+        <button class="btn btn-primary" onclick="selectPhone('5079646016')">+90 507 964 60 16</button>
+        <button class="btn btn-primary" onclick="selectPhone('5444525718')">+90 544 452 57 18</button>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
